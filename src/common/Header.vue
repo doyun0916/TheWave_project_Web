@@ -24,7 +24,7 @@ export default {
   .box {
     margin-top: 80px;
     margin-left: -10px;
-    width: 1540px;
+    width: 1529px;
     height: 60px;
     border: solid 1.5px #c3c3b7;
     border-right:0;

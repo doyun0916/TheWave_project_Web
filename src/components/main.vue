@@ -25,6 +25,28 @@
         <div class="partner">BECOME A PARTNER</div>
       </div>
     </div>
+    <div class="sports">
+      <div id="sports_img1"></div>
+      <span id="sports_img2"></span>
+      <span class="subject" style="margin-left:200px;">SPORTS</span>
+      <div id="sports_box">
+        <span><br>                  EARN THE CHANCE
+                    TO BE CHALLENGED</span>
+      </div>
+      <div class="morebox" style="margin-top:-120px; margin-left: 110px; position: relative;">SEE EXPERTS</div>
+      <div class="morebox" style="position: relative; width:190px; margin-left: 110px;">BECOME A PARTNER</div>
+    </div>
+    <div class="business">
+      <div id="business_img1"></div>
+      <span id="business_img2"></span>
+      <span id="business_subject"><br>BUSINESS</span>
+      <div id="business_box">
+        <span><br>               MEET CONSULTANTS
+                 WITH BEST EXPERIENCE</span>
+      </div>
+      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:700px; position: relative;">SEE EXPERTS</div>
+      <div class="morebox" style="background-color: white; color:black; margin-left:700px; position: relative; width:190px;">BECOME A PARTNER</div>
+    </div>
   </div>
 </template>
 
@@ -179,4 +201,99 @@ export default {
     position:relative;
     z-index:2;
   }
+ #sports_img1{
+   margin-top: 450px;
+   display: inline-block;
+   width: 1000px;
+   height: 722px;
+   background-image: url("./../assets/sports1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left:519px;
+ }
+ #sports_img2{
+   position: absolute;
+   display: inline-block;
+   width: 550px;
+   height: 350px;
+   background-image: url("./../assets/sports2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left: -1150px;
+   margin-top: 822px;
+   z-index:2;
+ }
+ #sports_box{
+   text-align:left;
+   color:white;
+   font-family: FuturaRoundW01-Medium;
+   width: 650px;
+   height: 295px;
+   opacity: 0.95;
+   border: solid 1px #707070;
+   margin-left:0;
+   margin-top: 100px;
+   font-size: 25px;
+   font-weight: 500;
+   white-space: pre;
+   line-height: 180%;
+   position:relative;
+   z-index:0;
+   background-color: #4bb6c7;
+ }
+ #business_img1{
+   margin-top: 650px;
+   display: inline-block;
+   width: 1000px;
+   height: 722px;
+   background-image: url("./../assets/business1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left:519px;
+ }
+ #business_img2{
+   position: absolute;
+   display: inline-block;
+   width: 700px;
+   height: 500px;
+   background-image: url("./../assets/business2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left: -1518px;
+   margin-top: 650px;
+   z-index:2;
+ }
+ #business_box{
+   text-align:left;
+   color:white;
+   font-family: FuturaRoundW01-Medium;
+   width: 650px;
+   height: 222px;
+   opacity: 0.95;
+   border: solid 1px #707070;
+   margin-left:270px;
+   margin-top: -228px;
+   font-size: 25px;
+   font-weight: 500;
+   white-space: pre;
+   line-height: 200%;
+   position:relative;
+   z-index:0;
+   background-color: black;
+ }
+ #business_subject {
+   text-align: center;
+   color: black;
+   font-family: FuturaRoundW01-Medium;
+   width: 380px;
+   height: 170px;
+   border: solid 1px #f3f3f3;
+   margin-left: -900px;
+   margin-top: 645px;
+   font-size: 40px;
+   position: absolute;
+   z-index: 2;
+   background-color: #f3f3f3;
+ }
+
 </style>

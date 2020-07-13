@@ -44,17 +44,19 @@
         <span><br>               MEET CONSULTANTS
                  WITH BEST EXPERIENCE</span>
       </div>
-      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:700px; position: relative;">SEE EXPERTS</div>
-      <div class="morebox" style="background-color: white; color:black; margin-left:700px; position: relative; width:190px;">BECOME A PARTNER</div>
+      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:700px; position: relative; font-weight: 600;">SEE EXPERTS</div>
+      <div class="morebox" style="background-color: white; color:black; margin-left:700px; position: relative; width:190px; font-weight: 600;">BECOME A PARTNER</div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from '../common/Header'
+import Footer from '../common/Footer'
 export default {
   name: 'main',
-  components: {Header},
+  components: {Header, Footer},
   data () {
     return {
       msg: '...'
@@ -126,7 +128,7 @@ export default {
     padding: 0;
     margin: 0;
     width: 1519px;
-    min-height: 6000px;
+    min-height: 4800px;
     background-color: #f3f3f3;
     position:absolute;
     top:0;

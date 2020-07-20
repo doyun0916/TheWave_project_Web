@@ -1,14 +1,14 @@
 <template>
   <div class="box">
     <div class="group">
-      <span class="menu"><img class="logo" src='./../assets/logo.png'></span>
+      <span class="menu"><img class="logo" src='./../assets/logo1.png'></span>
       <span class="menu" style="margin-left:300px"> ABOUT US </span>
       <span class="menu" style="margin-left:23px"> ARTIST </span>
-      <span class="menu"> BUSINESS </span>
-      <span class="menu" style="margin-left:23px"> SPORTS </span>
-      <span class="menu"> PARTNERS </span>
+      <span class="menu" style="margin-left:15px"> BUSINESS </span>
+      <span class="menu" style="margin-left:15px"> SPORTS </span>
+      <span class="menu" style="margin-left:15px"> PARTNERS </span>
       <span class="menu" style="margin-left:23px"> SUGGESTION </span>
-      <span class="menu" style="margin-left:135px"> CONTACT </span>
+      <span class="menu" style="margin-left:110px"> CONTACT </span>
       <span class="menu"><img class="toggle" src='./../assets/menubar.png'></span>
     </div>
   </div>
@@ -33,14 +33,12 @@ export default {
   .menu {
     width: 80px;
     height: 24px;
-    -webkit-text-stroke: 1px black;
-    font-family: FuturaRoundW01;
-    font-size: 12px;
-    font-weight: 400;
-    font-stretch: normal;
+    font-family: Trebuchet MS;
+    font-weight: 100;
+    font-size: 13px;
+    -webkit-text-stroke: 1.3px black;
     font-style: normal;
     line-height: 0.67;
-    letter-spacing: normal;
     display: inline-block;
   }
   .group {

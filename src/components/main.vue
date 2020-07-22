@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div id="page" style="overflow:hidden">
     <div class="main">
       <div id="main_img1" data-aos="fade-in" data-aos-delay="300"></div>
       <Header  data-aos="fade-in" data-aos-delay="300"></Header>
@@ -9,7 +9,7 @@
         <div class="morebox" data-aos="fade-in" data-aos-delay="1600" data-aos-easing="ease-in">Learn more</div>
       </div>
     </div>
-    <div class="artist" style="margin-top:-250px;">
+    <div class="artist" style="margin-top:-170px;">
       <div id="artist_img1" data-aos="fade-right" data-aos-delay="400"></div>
       <span id="artist_img2" data-aos="fade-right" data-aos-delay="600"></span>
       <span class="subject" style="margin-left: 1000px;" data-aos="fade-left" data-aos-delay="500">ARTIST</span>
@@ -32,7 +32,7 @@
       <div class="morebox" style="margin-top:-120px; margin-left: 110px; position: relative;" data-aos="fade-right" data-aos-delay="400">SEE EXPERTS</div>
       <div class="morebox" style="position: relative; width:190px; margin-left: 110px;" data-aos="fade-right" data-aos-delay="500">BECOME A PARTNER</div>
     </div>
-    <div class="business" style="margin-top: -200px;">
+    <div class="business" style="margin-top: -120px;">
       <div id="business_img1" data-aos="fade-down" data-aos-delay="400"></div>
       <span id="business_img2" data-aos="fade-up" data-aos-delay="800"></span>
       <span id="business_subject" data-aos="fade-down" data-aos-delay="600"><br>BUSINESS</span>
@@ -40,7 +40,7 @@
         <span data-aos="fade-up" data-aos-delay="450"><br>          MEET CONSULTANTS
            WITH BEST EXPERIENCE</span>
       </div>
-      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:650px; position: relative; font-weight: 600;" data-aos="fade-up" data-aos-delay="400">SEE EXPERTS</div>
+      <div class="morebox" style="background-color: white; color:black; margin-top:-170px; margin-left:650px; position: relative; font-weight: 600;" data-aos="fade-up" data-aos-delay="400">SEE EXPERTS</div>
       <div class="morebox" style="background-color: white; color:black; margin-left:650px; position: relative; width:190px; font-weight: 600;" data-aos="fade-up" data-aos-delay="500">BECOME A PARTNER</div>
     </div>
     <Footer></Footer>
@@ -64,6 +64,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  #page {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+  }
   #main_img1 {
     display: inline-block;
     width: 875px;
@@ -84,6 +94,8 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     margin-left:769px;
+    position: relative;
+    z-index:-1;
   }
   #wave {
     color: black;
@@ -122,20 +134,10 @@ export default {
     border: solid 1px white;
     background-color: black;
   }
-  #page {
-    padding: 0;
-    margin: 0;
-    width: 1519px;
-    height: 4100px;
-    background-color: #f3f3f3;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-2;
-  }
   #artist_img1{
+    margin-left:-520px;
     margin-top: 450px;
-    display: block;
+    display: inline-block;
     width: 1000px;
     height: 722px;
     background-image: url("./../assets/artist1.jpg");
@@ -143,10 +145,10 @@ export default {
     background-repeat: no-repeat;
   }
   #artist_img2{
-    margin-top: -723px;
-    margin-left: -358px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: -600px;
     display: inline-block;
-    position:absolute;
     width: 600px;
     height: 450px;
     background-image: url("./../assets/artist2.jpg");
@@ -179,26 +181,6 @@ export default {
     line-height: 180%;
     position:relative;
     z-index:0;
-  }
-  .morebox .expert{
-    margin-top:-150px;
-    margin-left:1040px;
-    width: 140px;
-    height: 30px;
-    border: solid 1px white;
-    background-color: black;
-    position:relative;
-    z-index:2;
-  }
-  .morebox .partner{
-    margin-top: -140px;
-    margin-left:1040px;
-    width: 190px;
-    height: 30px;
-    border: solid 1px white;
-    background-color: black;
-    position:relative;
-    z-index:2;
   }
   #sports_img1{
     margin-top: 450px;
@@ -285,10 +267,10 @@ export default {
     color: black;
     font-family: "Trebuchet MS";
     width: 360px;
-    height: 150px;
+    height: 200px;
     border: solid 1px #f3f3f3;
     margin-left: -900px;
-    margin-top: 600px;
+    margin-top: 650px;
     font-size: 40px;
     position: absolute;
     z-index: 2;

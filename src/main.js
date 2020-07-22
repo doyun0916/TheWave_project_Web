@@ -7,6 +7,8 @@ import axios from 'axios'
 import { BootstrapVue } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
@@ -14,6 +16,9 @@ Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({
+  created () {
+    AOS.init()
+  },
   el: '#app',
   router,
   components: { App },

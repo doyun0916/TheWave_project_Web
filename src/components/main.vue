@@ -1,51 +1,49 @@
 <template>
-  <div class="container">
   <div id="page">
     <div class="main">
-      <div id="main_img1"></div>
-      <Header></Header>
-      <div id="main_img2">
-        <div id="wave">The Wave</div>
-        <div id="wavesub">Giving opportunities and support to those who want to express their talents</div>
-        <div class="morebox">Learn more</div>
+      <div id="main_img1" data-aos="fade-in" data-aos-delay="300"></div>
+      <Header  data-aos="fade-in" data-aos-delay="300"></Header>
+      <div id="main_img2"  data-aos="fade-in" data-aos-delay="300">
+        <div id="wave" data-aos="fade-in" data-aos-delay="800"  data-aos-easing="ease-in">The Wave</div>
+        <div id="wavesub" data-aos="fade-in" data-aos-delay="1200" data-aos-easing="ease-in">Giving opportunities and support to those who want to express their talents</div>
+        <div class="morebox" data-aos="fade-in" data-aos-delay="1600" data-aos-easing="ease-in">Learn more</div>
       </div>
     </div>
-    <div class="artist">
-      <div id="artist_img1"></div>
-      <span id="artist_img2"></span>
-      <span class="subject" style="margin-left: 1000px;">ARTIST</span>
-      <div id="artist_box">
-        <span><br>                      CONNECTION WITH
+    <div class="artist" style="margin-top:-250px;">
+      <div id="artist_img1" data-aos="fade-right" data-aos-delay="400"></div>
+      <span id="artist_img2" data-aos="fade-right" data-aos-delay="600"></span>
+      <span class="subject" style="margin-left: 1000px;" data-aos="fade-left" data-aos-delay="500">ARTIST</span>
+      <div id="artist_box" data-aos="fade-left" data-aos-delay="700">
+        <span data-aos="fade-left" data-aos-delay="800"><br>                    CONNECTION WITH
                          BEST EXPERTS LEADS
-                    YOU TO SUCCESS</span>
+                   YOU TO SUCCESS</span>
       </div>
-      <div class="morebox" style="margin-top: -120px; margin-left: 1100px; position: relative;">SEE EXPERTS</div>
-      <div class="morebox" style="margin-left: 1100px; position: relative; width:190px;">BECOME A PARTNER</div>
+      <div class="morebox" style="margin-top: -120px; margin-left: 1100px; position: relative;" data-aos="fade-left" data-aos-delay="850">SEE EXPERTS</div>
+      <div class="morebox" style="margin-left: 1100px; position: relative; width:190px;" data-aos="fade-left" data-aos-delay="900">BECOME A PARTNER</div>
     </div>
-    <div class="sports">
-      <div id="sports_img1"></div>
-      <span id="sports_img2"></span>
-      <span class="subject" style="margin-left:-1000px;">SPORTS</span>
-      <div id="sports_box">
-        <span><br>               EARN THE CHANCE
-                 TO BE CHALLENGED</span>
+    <div class="sports" style="margin-top: -100px;">
+      <div id="sports_img1" data-aos="fade-left" data-aos-delay="400"></div>
+      <span id="sports_img2" data-aos="fade-left" data-aos-delay="800"></span>
+      <span class="subject" style="margin-left:-1000px;" data-aos="fade-right" data-aos-delay="600">SPORTS</span>
+      <div id="sports_box" data-aos="fade-right" data-aos-delay="600">
+        <span data-aos="fade-right" data-aos-delay="400"><br>              EARN THE CHANCE
+                TO BE CHALLENGED</span>
       </div>
-      <div class="morebox" style="margin-top:-120px; margin-left: 110px; position: relative;">SEE EXPERTS</div>
-      <div class="morebox" style="position: relative; width:190px; margin-left: 110px;">BECOME A PARTNER</div>
+      <div class="morebox" style="margin-top:-120px; margin-left: 110px; position: relative;" data-aos="fade-right" data-aos-delay="400">SEE EXPERTS</div>
+      <div class="morebox" style="position: relative; width:190px; margin-left: 110px;" data-aos="fade-right" data-aos-delay="500">BECOME A PARTNER</div>
     </div>
-    <div class="business">
-      <div id="business_img1"></div>
-      <span id="business_img2"></span>
-      <span id="business_subject"><br>BUSINESS</span>
-      <div id="business_box">
-        <span><br>          MEET CONSULTANTS
-            WITH BEST EXPERIENCE</span>
+    <div class="business" style="margin-top: -200px;">
+      <div id="business_img1" data-aos="fade-down" data-aos-delay="400"></div>
+      <span id="business_img2" data-aos="fade-up" data-aos-delay="800"></span>
+      <span id="business_subject" data-aos="fade-down" data-aos-delay="600"><br>BUSINESS</span>
+      <div id="business_box" data-aos="fade-up" data-aos-delay="400">
+        <span data-aos="fade-up" data-aos-delay="450"><br>          MEET CONSULTANTS
+           WITH BEST EXPERIENCE</span>
       </div>
-      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:650px; position: relative; font-weight: 600;">SEE EXPERTS</div>
-      <div class="morebox" style="background-color: white; color:black; margin-left:650px; position: relative; width:190px; font-weight: 600;">BECOME A PARTNER</div>
+      <div class="morebox" style="background-color: white; color:black; margin-top:-150px; margin-left:650px; position: relative; font-weight: 600;" data-aos="fade-up" data-aos-delay="400">SEE EXPERTS</div>
+      <div class="morebox" style="background-color: white; color:black; margin-left:650px; position: relative; width:190px; font-weight: 600;" data-aos="fade-up" data-aos-delay="500">BECOME A PARTNER</div>
     </div>
     <Footer></Footer>
-  </div>
   </div>
 </template>
 
@@ -55,6 +53,7 @@ import Footer from '../common/Footer'
 export default {
   name: 'main',
   components: {Header, Footer},
+  methods: {},
   data () {
     return {
       msg: '...'
@@ -72,7 +71,7 @@ export default {
     background-image: url("./../assets/main1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
     z-index:-1;
@@ -127,7 +126,7 @@ export default {
     padding: 0;
     margin: 0;
     width: 1519px;
-    height: 4700px;
+    height: 4100px;
     background-color: #f3f3f3;
     position:absolute;
     top:0;
@@ -300,26 +299,5 @@ export default {
     src: url(../font/Fair-Prosper.eot) format('embedded-opentype'),
     url(../font/Fair-Prosper.woff) format('woff'),
     url(../font/Fair-Prosper.ttf) format('truetype');
-  }
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
   }
 </style>
